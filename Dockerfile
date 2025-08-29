@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-slim
 
 # 2. 앱 JAR 파일 복사
-COPY build/libs/*.jar app.jar
+COPY *.jar app.jar
 
 # 3. 컨테이너 실행 명령
 ENTRYPOINT ["java", "-jar", "/app.jar"]
